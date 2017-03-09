@@ -56,6 +56,8 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
+
+
         int m = Integer.parseInt(metros.getText().toString());
         valor = valor*(m^2);
 
@@ -66,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (frete.isChecked()){
             valor = valor*1.3;
-            txtResultado.setText(String.valueOf(valor));
+            txtResultado.setText(String.valueOf(NumberFormat.getCurrencyInstance().format(valor)));
         }
 
     }
