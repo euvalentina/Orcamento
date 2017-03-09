@@ -52,7 +52,14 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, R.string.informe3, Toast.LENGTH_SHORT).show();
         }
 
-        
+
+        int m = Integer.parseInt(metros.getText().toString());
+        valor = valor*(m^2);
+
+        if (metros.equals("")){
+            Toast.makeText(this, R.string.informe4, Toast.LENGTH_SHORT).show();
+        }
+        txtResultado.setText(String.valueOf(valor));
 
 
         if (frete.isChecked()){

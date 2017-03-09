@@ -25,7 +25,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/pisoBranco"
-            android:text="@string/pisoBranco"/>
+            android:text="@string/pisoBranco"
+            android:checked="true" />
 
         <RadioButton
             android:layout_width="match_parent"
@@ -55,7 +56,8 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/metros"/>
+        android:id="@+id/metros"
+        android:text="10" />
 
     <CheckBox
         android:layout_width="match_parent"
