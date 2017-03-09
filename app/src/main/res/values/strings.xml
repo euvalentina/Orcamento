@@ -8,4 +8,7 @@
     <string name="informe2">Informe a medida em m2</string>
     <string name="calcular">Calcular</string>
     <string name="frete">Ultra frete mega rápido</string>
+    <string name="selecione">Selecione uma opção</string>
+    <string name="selecionar">Selecione uma opção</string>
+    <string name="informe3">informe uma opção</string>
 </resources>
