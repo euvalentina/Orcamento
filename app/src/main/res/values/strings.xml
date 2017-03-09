@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Orcamento</string>
+    <string name="informe">Informe o material que deseja:</string>
+    <string name="pisoBranco">Piso branco baixo brilho</string>
+    <string name="pisoAlbania">Piso albania 45x45</string>
+    <string name="pisoPorcelanato">Porcelanato perlato branco</string>
+    <string name="pisoMosaico">Revestimento mosaico</string>
+    <string name="informe2">Informe a medida em m2</string>
+    <string name="calcular">Calcular</string>
+    <string name="frete">Ultra frete mega rápido</string>
 </resources>
