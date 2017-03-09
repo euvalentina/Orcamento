@@ -9,7 +9,10 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.NumberFormat;
+
 public class MainActivity extends AppCompatActivity {
+
 
     TextView txtResultado;
     CheckBox frete;
@@ -59,8 +62,7 @@ public class MainActivity extends AppCompatActivity {
         if (metros.equals("")){
             Toast.makeText(this, R.string.informe4, Toast.LENGTH_SHORT).show();
         }
-        txtResultado.setText(String.valueOf(valor));
-
+        txtResultado.setText(String.valueOf(NumberFormat.getCurrencyInstance().format(valor)));
 
         if (frete.isChecked()){
             valor = valor*1.3;
