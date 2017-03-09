@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -13,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     TextView txtResultado;
     CheckBox frete;
     RadioGroup grupoMaterial;
+    EditText metros;
 
 
     @Override
@@ -23,13 +25,12 @@ public class MainActivity extends AppCompatActivity {
         txtResultado = (TextView) findViewById(R.id.txtResultado);
         frete = (CheckBox) findViewById(R.id.frete);
         grupoMaterial = (RadioGroup) findViewById(R.id.grupoMaterial);
-
+        metros = (EditText) findViewById(R.id.metros);
     }
 
     public void Calcular(View view) {
         double valor = 0;
         int selected = grupoMaterial.getCheckedRadioButtonId();
-
         switch (selected){
             case R.id.pisoBranco:
                 valor = 24.9;
@@ -51,7 +52,13 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, R.string.informe3, Toast.LENGTH_SHORT).show();
         }
 
+        
 
+
+        if (frete.isChecked()){
+            valor = valor*1.3;
+            txtResultado.setText(String.valueOf(valor));
+        }
 
     }
 }
